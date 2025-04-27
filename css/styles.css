@@ -5,7 +5,7 @@
 }
 
 :root {
-  --header-bg-clr: #3B429F;
+  --header-bg-clr: #3f3047;
 }
 
 /* google font family Rubik */
@@ -21,6 +21,7 @@ body {
 }
 
 header#header-section {
+  width: 100%;
   background-color: var(--header-bg-clr);
   height: 15vh;
   display: flex;
@@ -44,4 +45,94 @@ header#header-section {
       font-weight: bold;
     }
   }
+}
+
+main#main-section {
+  width: 100%;
+  background: linear-gradient(130deg, #5171a5, #3f3047);
+  #container {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    #hero-heading-container {
+      max-width: 650px;
+      width: 80%;
+      height: 80%;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      #hero-heading {
+        text-transform: uppercase;
+        color: #eee;
+      }
+
+      .hero-description {
+        color: #bdb7b7;
+      }
+
+    }
+
+    #hero-link-down-combo {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-self: flex-end;
+
+      .link-place {
+        padding: 1rem;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        a {
+          text-decoration: none;
+          color: #e0d9d9;
+        }
+      }
+
+      .link-social {
+        padding: 1rem;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        p {
+          font-size: 1rem;
+          text-align: center;
+          margin: 0 0.5rem;
+          color: #e0d9d9;
+        }
+
+        .social-link-container {
+          display: flex;
+          gap: 9px;
+          a > img {
+            width: 1rem;
+            height: 1rem;
+            display: block;
+          }
+
+          a > img:hover {
+            display: unset; /* jumping animation */ 
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+
 }
