@@ -4,14 +4,44 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-bg-clr: #3B429F;
+}
 
 /* google font family Rubik */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 body {
+  width: 100%;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+}
+
+header#header-section {
+  background-color: var(--header-bg-clr);
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #nav-bar {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    li > a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    li > a:hover {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
 }
