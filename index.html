@@ -5,8 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio website demo</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="img/jpg" href="./assest/hero-contents/1740986721431.jpg">
   </head>
   <body>
-    
+    <header id="header-section">
+      <ul id="nav-bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+
+    <main id="main-section">
+      <div id="hero-heading-container">
+        <h1 id="hero-heading">Sudhin Raj</h1>
+        <p class="hero-description">Web Developer && Technical Writer</p>
+      </div>
+
+      <div id="hero-link-down-combo">
+        <p class="link-place">
+          <a href="">India, Kerala</a>
+        </p>
+
+        <p class="link-social">
+          Find me online
+          <a href="">
+            <img id="facebook-icon"
+              alt="facebook icon"
+              src="./assest/facebook.png">
+          </a>
+
+          <a href="">
+            <img id="instagram-icon"
+              alt="instagram icon"
+              src="./assest/instagram.png">
+          </a>
+        </p>
+      </div>
+    </main>
+
+    <section id="hero-section">
+      <p class="section-content-description">
+        I am a web developer and technical writer. 
+        I write articles on web development and programming
+      </p>
+
+      <div id="hero-container">
+        <img src="./assest/hero-contents/1740986721431.jpg" alt="">
+        <p class="hero-container-description">
+          Hi there! I'm Sudhin, a self-taught developer from 
+          Kerala, India 🇮🇳 with a deep passion for building 
+          meaningful projects, learning modern technologies, 
+          and helping others grow in their coding journey.
+        </p>
+      </div>
+    </section>
+
+    <article id="article-section">
+      <p class="article-description">
+        So I'm ready to help companies build their 
+        web presence and improve their technical 
+        documentation
+      </p>
+    </article>
+
+    <footer>
+      <p id="contact-para">
+        Want to work together? I'd love to hear from you
+      </p>
+      <h3>Contact Me</h3>
+      <form action="#" method="post">
+        <label for="user-name">
+          Name
+          <input 
+            id="name-input"
+            name="user-name" 
+            type="text">
+        </label>
+
+        <label for="user-email">
+          Email
+          <input 
+            id="user-email"
+            name="user-email"
+            type="email">
+        </label>
+
+        <label for="user-message">
+          Message 
+          <textarea>
+
+          </textarea>
+        </label>
+
+        <button 
+          type="submit"
+          class="submit-btn">
+          SEND MESSAGE
+        </button>
+      </form>
+
+      <div id="inner-footer-address">
+        <div class="text-right">
+          <p>&copy; 2025 Sudhin Raj</p>
+        </div>
+      </div>
+    </footer>
+
+
   </body>
 </html>
