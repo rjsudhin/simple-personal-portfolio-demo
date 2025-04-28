@@ -29,16 +29,17 @@ header#header-section {
   justify-content: center;
   align-items: center;
   #nav-bar {
-    width: 100%;
+    width: 80%;
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
     li > a {
       text-transform: uppercase;
       text-decoration: none;
       color: #fff;
+      margin-right: 1.5rem;
     }
 
     li > a:hover {
