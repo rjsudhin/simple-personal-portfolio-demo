@@ -209,3 +209,122 @@ main#main-section {
     text-transform: capitalize;
   }
 }
+
+/* footer */
+#footer-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #571b77;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+
+  #container-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem 2.5rem;
+
+    .contact-para {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #e0d9d9;
+    }
+    
+    #contact-section {
+      width: 90%;
+      max-width: 800px;
+      margin: 2.5rem auto;
+
+      h3 {
+        font-size: 1.3rem;
+        color: #bdb7b7;
+      }
+      
+      #submit-form {
+        margin: 0.5rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input, textarea {
+          background-color: #563b6498;
+          backdrop-filter: blur(10px);
+          color: #eee;
+          border: none;
+          box-shadow: 1px 2px 1px #252525;
+        }
+
+        
+  
+        #first-choice-container {
+          width: 100%;
+          display: flex;
+          gap: 1rem;
+          margin: 1.2rem 0;
+          label {
+            font-size: 1rem;
+            color: #fff;
+          }
+  
+          label input{
+            margin-top: 0.5rem;
+            display: block;
+            width: 200px;
+            height: 25px;
+            outline: none;
+            font-size: 1rem;
+            padding-left: 1rem;
+          }
+        }
+
+        input, textarea, button {
+          border-radius: 0.3rem;
+        }
+  
+        label[for='user-message'] {
+          width: 100%;
+          color: #fff;
+          textarea {
+            font-size: 1rem;
+            color: #cbc4ce;
+            margin-top: 0.5rem;
+            display: block;
+            width: 100%;
+            height: 200px;
+            border: none;
+            outline: none;
+            text-align: center;
+          }
+        }
+  
+        button[type='submit'] {
+          width: 100%;
+          background-color: #20509e;
+          color: #eee;
+          font-size: 1rem;
+          font-weight: bold;
+          border: none;
+          box-shadow: 1px 2px 1px #252525;
+    
+          height: 30px;
+          margin-top: 1rem;
+        }
+  
+      }
+
+    }
+
+    #inner-footer-address {
+      align-self: flex-end;
+      color: #bdb7b7;
+      font-size: 1rem;
+
+    }
+  }
+}
+/* footer */
