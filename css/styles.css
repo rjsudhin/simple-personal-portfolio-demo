@@ -6,6 +6,7 @@
 
 :root {
   --header-bg-clr: #3f3047;
+  --line-gr-bg-clr: linear-gradient(130deg, #5171a5, #3f3047)
 }
 
 /* google font family Rubik */
@@ -50,7 +51,7 @@ header#header-section {
 main#main-section {
   width: 100%;
   background: linear-gradient(130deg, #5171a5, #3f3047);
-  #container {
+  #container-1 {
     height: 85vh;
     display: flex;
     flex-direction: column;
@@ -131,6 +132,62 @@ main#main-section {
         }
       }
 
+    }
+  }
+
+
+}
+
+/* hero section */
+#hero-section {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1rem;
+  background-color: aliceblue;
+
+  #container-2 {
+    margin: 2.5rem auto;
+    width: 90%;
+    height: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1.5rem 2rem;
+
+    #section-content-description {
+      .content-description {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #464447;
+        text-transform: capitalize;
+      }
+    }
+
+    #hero-container {
+      margin: 1rem auto;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+
+      #hero-content-img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        box-shadow: 1px 5px 10px 1px #252525;
+      }
+
+      .hero-container-description {
+        font-size: 1rem;
+        text-align: left;
+        color: #262527;
+        line-height: clamp(1.5, 1.5, 2.5)
+      }
     }
   }
 
