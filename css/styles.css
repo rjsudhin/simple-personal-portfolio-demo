@@ -190,6 +190,22 @@ main#main-section {
       }
     }
   }
+}
 
-
+#article-section {
+  width: 100%;
+  background-color: rgb(159, 208, 238);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  
+  #container-3 {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #464447;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
 }
