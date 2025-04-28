@@ -243,6 +243,7 @@ main#main-section {
       h3 {
         font-size: 1.3rem;
         color: #bdb7b7;
+        text-transform: uppercase;
       }
       
       #submit-form {
