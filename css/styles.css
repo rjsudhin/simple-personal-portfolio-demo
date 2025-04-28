@@ -47,7 +47,49 @@ header#header-section {
       font-weight: bold;
     }
   }
+  
+  /* Hide hamburger by default */
+  #hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    gap: 5px;
+  }
+
+  /* Hamburger lines */
+  #hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+
+  /* Responsive Part */
+  @media (max-width: 768px) {
+    #nav-bar {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 150px;
+      text-align: right;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  
+    #nav-bar.active {
+      display: flex;
+    }
+  
+    #hamburger {
+      display: flex;
+    }
+  }
 }
+
 
 main#main-section {
   width: 100%;
